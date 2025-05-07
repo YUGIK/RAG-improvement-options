@@ -10,14 +10,14 @@
 - Генерация эмбеддингов предложений через `sentence-transformers`
 - Хранение и поиск эмбеддингов с использованием векторной базы данных `ChromaDB`
 - Использование современных моделей трансформеров (`transformers`, `torch`)
-- Пример интеграции с FastAPI для построения API (опционально)
+
 
 ## Установка
 
 Перед запуском убедитесь, что у вас установлен Python 3.10+.
 Установите необходимые зависимости:
 
-pip install chromadb sentence-transformers pypdf2 pdfminer.six requests torch scikit-learn fastapi uvicorn
+pip install chromadb sentence-transformers pypdf2 requests pdfminer pdfminer.six -U ipywidgets==7.7.1  
 
 text
 
@@ -28,22 +28,12 @@ text
 - `pypdf2`, `pdfminer.six` - извлечение текста из PDF
 - `torch`, `transformers` - работа с нейросетевыми моделями
 - `requests` - загрузка данных по HTTP
-- `scikit-learn`, `numpy`, `scipy` - обработка и анализ данных
 
 ## Быстрый старт
 
 1. Поместите PDF-файлы, которые хотите обработать, в рабочую папку.
 2. Запустите Jupyter Notebook `NLP_GEN_Project_Smirnov_Y_A.ipynb`.
 3. Следуйте инструкциям в ноутбуке для извлечения текста, генерации эмбеддингов и поиска по базе.
-
-## Пример использования
-
-from sentence_transformers import SentenceTransformer
-
-model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
-embeddings = model.encode(["Пример предложения для эмбеддинга"])
-
-text
 
 ## Автор
 
