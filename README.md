@@ -19,8 +19,6 @@
 
 pip install chromadb sentence-transformers pypdf2 requests pdfminer pdfminer.six -U ipywidgets==7.7.1  
 
-text
-
 ## Используемые библиотеки
 
 - `chromadb` - векторная база данных для хранения эмбеддингов
